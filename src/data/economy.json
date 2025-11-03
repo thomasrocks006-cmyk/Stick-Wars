@@ -1,0 +1,6 @@
+{
+  "startingGold": 200,
+  "goldTickRate": 2000,
+  "goldPerTick": 10,
+  "baseHealth": 500
+}

@@ -1,0 +1,59 @@
+{
+  "units": [
+    {
+      "id": "warrior",
+      "name": "Warrior",
+      "cost": 50,
+      "health": 100,
+      "damage": 15,
+      "speed": 60,
+      "attackRange": 30,
+      "attackSpeed": 1000,
+      "color": 5025616
+    },
+    {
+      "id": "archer",
+      "name": "Archer",
+      "cost": 75,
+      "health": 60,
+      "damage": 20,
+      "speed": 50,
+      "attackRange": 150,
+      "attackSpeed": 1500,
+      "color": 16750848
+    },
+    {
+      "id": "knight",
+      "name": "Knight",
+      "cost": 100,
+      "health": 150,
+      "damage": 25,
+      "speed": 40,
+      "attackRange": 30,
+      "attackSpeed": 800,
+      "color": 2196243
+    },
+    {
+      "id": "mage",
+      "name": "Mage",
+      "cost": 120,
+      "health": 80,
+      "damage": 35,
+      "speed": 45,
+      "attackRange": 200,
+      "attackSpeed": 2000,
+      "color": 10233776
+    },
+    {
+      "id": "tank",
+      "name": "Tank",
+      "cost": 150,
+      "health": 250,
+      "damage": 30,
+      "speed": 30,
+      "attackRange": 30,
+      "attackSpeed": 1200,
+      "color": 6323595
+    }
+  ]
+}
