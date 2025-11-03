@@ -1,0 +1,22 @@
+{
+  "name": "line-clash",
+  "version": "1.0.0",
+  "description": "Line Clash - A browser-based tower defense game built with Phaser 3",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["game", "phaser", "typescript", "tower-defense"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phaser": "^3.90.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0"
+  }
+}

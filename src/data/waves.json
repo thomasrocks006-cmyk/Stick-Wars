@@ -1,0 +1,34 @@
+{
+  "waves": [
+    {
+      "id": 1,
+      "budget": 200,
+      "spawnInterval": 3000,
+      "difficulty": 1
+    },
+    {
+      "id": 2,
+      "budget": 350,
+      "spawnInterval": 2500,
+      "difficulty": 1.2
+    },
+    {
+      "id": 3,
+      "budget": 500,
+      "spawnInterval": 2000,
+      "difficulty": 1.5
+    },
+    {
+      "id": 4,
+      "budget": 700,
+      "spawnInterval": 1800,
+      "difficulty": 1.8
+    },
+    {
+      "id": 5,
+      "budget": 1000,
+      "spawnInterval": 1500,
+      "difficulty": 2
+    }
+  ]
+}

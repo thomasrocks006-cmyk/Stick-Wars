@@ -1,0 +1,34 @@
+{
+  "upgrades": [
+    {
+      "id": "gold_income",
+      "name": "Gold Income",
+      "description": "Increase gold per tick",
+      "cost": 100,
+      "effect": {
+        "type": "goldPerTick",
+        "value": 5
+      }
+    },
+    {
+      "id": "unit_damage",
+      "name": "Unit Damage",
+      "description": "Increase all unit damage by 10%",
+      "cost": 150,
+      "effect": {
+        "type": "damageMultiplier",
+        "value": 1.1
+      }
+    },
+    {
+      "id": "unit_health",
+      "name": "Unit Health",
+      "description": "Increase all unit health by 10%",
+      "cost": 150,
+      "effect": {
+        "type": "healthMultiplier",
+        "value": 1.1
+      }
+    }
+  ]
+}
