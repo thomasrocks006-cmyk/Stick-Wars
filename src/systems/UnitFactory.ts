@@ -15,8 +15,4 @@ export class UnitFactory {
   getAllUnits(): UnitData[] {
     return this.unitsData;
   }
-
-  getUnitById(id: string): UnitData | undefined {
-    return this.unitsData.find(unit => unit.id === id);
-  }
 }

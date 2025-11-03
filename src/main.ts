@@ -27,4 +27,7 @@ const config: Phaser.Types.Core.GameConfig = {
 
 const game = new Phaser.Game(config);
 
+// Expose game instance globally for debugging
+(window as any).game = game;
+
 export default game;

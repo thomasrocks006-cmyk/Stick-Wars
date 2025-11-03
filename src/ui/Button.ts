@@ -5,6 +5,9 @@ export class Button extends Phaser.GameObjects.Container {
   private text: Phaser.GameObjects.Text;
   private callback: () => void;
   private enabled: boolean = true;
+  private color: number;
+  private buttonWidth: number;
+  private buttonHeight: number;
 
   constructor(
     scene: Phaser.Scene,
@@ -19,6 +22,9 @@ export class Button extends Phaser.GameObjects.Container {
     super(scene, x, y);
 
     this.callback = callback;
+    this.color = color;
+    this.buttonWidth = width;
+    this.buttonHeight = height;
 
     // Background
     this.background = scene.add.graphics();
@@ -50,19 +56,19 @@ export class Button extends Phaser.GameObjects.Container {
     this.on('pointerover', () => {
       if (this.enabled) {
         this.background.clear();
-        this.background.fillStyle(color, 0.8);
-        this.background.fillRoundedRect(-width / 2, -height / 2, width, height, 8);
+        this.background.fillStyle(this.color, 0.8);
+        this.background.fillRoundedRect(-this.buttonWidth / 2, -this.buttonHeight / 2, this.buttonWidth, this.buttonHeight, 8);
         this.background.lineStyle(2, 0xffffff, 1);
-        this.background.strokeRoundedRect(-width / 2, -height / 2, width, height, 8);
+        this.background.strokeRoundedRect(-this.buttonWidth / 2, -this.buttonHeight / 2, this.buttonWidth, this.buttonHeight, 8);
       }
     });
 
     this.on('pointerout', () => {
       this.background.clear();
-      this.background.fillStyle(color, this.enabled ? 1 : 0.5);
-      this.background.fillRoundedRect(-width / 2, -height / 2, width, height, 8);
+      this.background.fillStyle(this.color, this.enabled ? 1 : 0.5);
+      this.background.fillRoundedRect(-this.buttonWidth / 2, -this.buttonHeight / 2, this.buttonWidth, this.buttonHeight, 8);
       this.background.lineStyle(2, 0xffffff, 0.5);
-      this.background.strokeRoundedRect(-width / 2, -height / 2, width, height, 8);
+      this.background.strokeRoundedRect(-this.buttonWidth / 2, -this.buttonHeight / 2, this.buttonWidth, this.buttonHeight, 8);
     });
 
     scene.add.existing(this);
@@ -70,15 +76,12 @@ export class Button extends Phaser.GameObjects.Container {
 
   setEnabled(enabled: boolean): void {
     this.enabled = enabled;
-    const width = this.width;
-    const height = this.height;
-    const color = 0x4CAF50;
     
     this.background.clear();
-    this.background.fillStyle(color, enabled ? 1 : 0.5);
-    this.background.fillRoundedRect(-width / 2, -height / 2, width, height, 8);
+    this.background.fillStyle(this.color, enabled ? 1 : 0.5);
+    this.background.fillRoundedRect(-this.buttonWidth / 2, -this.buttonHeight / 2, this.buttonWidth, this.buttonHeight, 8);
     this.background.lineStyle(2, 0xffffff, 0.5);
-    this.background.strokeRoundedRect(-width / 2, -height / 2, width, height, 8);
+    this.background.strokeRoundedRect(-this.buttonWidth / 2, -this.buttonHeight / 2, this.buttonWidth, this.buttonHeight, 8);
     
     this.text.setAlpha(enabled ? 1 : 0.5);
   }
